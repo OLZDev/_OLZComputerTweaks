@@ -15,7 +15,7 @@ ECHO 3.  Restart PC
 ECHO 4.  System Refresh
 ECHO 5.  Credits
 ECHO 6.  Flush DNS
-ECHO 7.  Coming soon...
+ECHO 7.  Shutdown PC
 ECHO ==========PRESS 'Q' TO QUIT==========
 ECHO WARNING: AFTER RUNNING ACTION CLOSE W
 ECHO INDOW OR EVERYTHING RUNS AT ONECE
@@ -72,10 +72,13 @@ pause
 ipconfig /flushdns
 pasue
 
-:Selection6
-cls
+:Selection7
+shutdown -s
+echo msgbox "SHUTTING DOWN PC" > %tmp%\tmp.vbs
+cscript /nologo %tmp%\tmp.vbs
+del %tmp%\tmp.vbs
 exit
-
+exit
 
 :Quit
 cls
