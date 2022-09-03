@@ -9,6 +9,7 @@ This menu allows you to do the following:
 4. Credit me lol
 5. Open chrome (if u have it)
 6: Tasklist
+7: Shutdown PC
 
 Adding more soon...
 
