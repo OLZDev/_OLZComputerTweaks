@@ -7,7 +7,7 @@ CLS
 :MENU
 CLS
 
-ECHO ============= OLZ's PC MENU ==========
+ECHO ============OLZ's PC MENU============
 ECHO -------------------------------------
 ECHO 1.  Tasklist
 ECHO 2.  Open Chrome (if installed)
@@ -15,8 +15,8 @@ ECHO 3.  Restart PC
 ECHO 4.  System Refresh
 ECHO 5.  Credits
 ECHO 6.  Flush DNS
+ECHO 7.  Coming soon...
 ECHO ==========PRESS 'Q' TO QUIT==========
-ECHO ====PRESS 'ENTER' TO EXECUTE ALL=====
 ECHO WARNING: AFTER RUNNING ACTION CLOSE W
 ECHO INDOW OR EVERYTHING RUNS AT ONECE
 ECHO.
@@ -30,6 +30,7 @@ IF /I '%INPUT%'=='3' GOTO Selection3
 IF /I '%INPUT%'=='4' GOTO Selection4
 IF /I '%INPUT%'=='5' GOTO Selection5
 IF /I '%INPUT%'=='6' GOTO Selection6
+IF /I '%INPUT%'=='7' GOTO Selection7
 IF /I '%INPUT%'=='Q' GOTO Quit
 
 CLS
@@ -70,6 +71,11 @@ pause
 :Selection6
 ipconfig /flushdns
 pasue
+
+:Selection6
+cls
+exit
+
 
 :Quit
 cls
