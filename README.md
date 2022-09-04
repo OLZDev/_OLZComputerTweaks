@@ -3,12 +3,19 @@
 
 This is a PC Tweaks menu.
 This menu allows you to do the following:
+
 1. FlushDNS
+
 2. Restart PC
+
 3. Restart Explorer.exe
+
 4. View Credits
+
 5. Re-install Program
+
 6: Tasklist
+
 7: Shutdown PC
 
 Adding more soon...
