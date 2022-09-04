@@ -13,4 +13,10 @@ This menu allows you to do the following:
 
 Adding more soon...
 
+# INSTALLATION
+***ONLY FOR WINDOWS!***
+Download Link: https://github.com/hithisisme123/_OLZComputerTweaks/archive/refs/heads/main.zip
+
+# DISCLAIMER
+
 ⚠️ **BETA** THERE ARE BUGS IN THIS BUILD **BETA** ⚠️
