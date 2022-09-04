@@ -18,6 +18,7 @@ ECHO 6.  Flush DNS
 ECHO 7.  Shutdown PC 
 ECHO 8.  Disable RTP
 ECHO 9.  Enable RTP
+ECHO 10. Coming soon...
 ECHO ==========PRESS 'Q' TO QUIT==========
 ECHO WARNING: AFTER RUNNING ACTION CLOSE W
 ECHO INDOW OR EVERYTHING RUNS AT ONECE
@@ -35,6 +36,7 @@ IF /I '%INPUT%'=='6' GOTO Selection6
 IF /I '%INPUT%'=='7' GOTO Selection7
 IF /I '%INPUT%'=='8' GOTO Selection8
 IF /I '%INPUT%'=='9' GOTO Selection9
+IF /I '%INPUT%'=='10' GOTO Selection10
 IF /I '%INPUT%'=='Q' GOTO Quit
 
 CLS
@@ -92,6 +94,9 @@ pasue
 
 :Selection9
 sc start WinDefend
+
+:Selection10
+exit
 
 :Quit
 cls
