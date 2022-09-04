@@ -18,7 +18,11 @@ This menu allows you to do the following:
 
 7: Shutdown PC
 
-Adding more soon...
+8: Enable RTP
+
+9: Diable RTP
+
+etc.
 
 # INSTALLATION
 ***ONLY FOR WINDOWS!***
