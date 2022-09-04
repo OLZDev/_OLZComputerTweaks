@@ -8,7 +8,6 @@ CLS
 CLS
 
 ECHO ============OLZ's PC MENU============
-ECHO -------------------------------------
 ECHO 1.  Tasklist 
 ECHO 2.  Re-Install
 ECHO 3.  Restart PC
@@ -16,6 +15,8 @@ ECHO 4.  System Refresh
 ECHO 5.  Credits
 ECHO 6.  Flush DNS  
 ECHO 7.  Shutdown PC 
+ECHO 8.  Disable RTP
+ECHO 9.  Enable RTP
 ECHO ==========PRESS 'Q' TO QUIT==========
 ECHO WARNING: AFTER RUNNING ACTION CLOSE W
 ECHO INDOW OR EVERYTHING RUNS AT ONECE
@@ -31,15 +32,17 @@ IF /I '%INPUT%'=='4' GOTO Selection4
 IF /I '%INPUT%'=='5' GOTO Selection5
 IF /I '%INPUT%'=='6' GOTO Selection6
 IF /I '%INPUT%'=='7' GOTO Selection7
+IF /I '%INPUT%'=='8' GOTO Selection8
+IF /I '%INPUT%'=='9' GOTO Selection9
 IF /I '%INPUT%'=='Q' GOTO Quit
 
 CLS
 
-ECHO ============INVALID INPUT============
-ECHO -------------------------------------
-ECHO Please select a option from the Menu!
-ECHO -------------------------------------
-ECHO ======PRESS ANY KEY TO CONTINUE======
+ECHO ========== INVALID OPTION ==========
+ECHO ------------------------------------
+ECHO Please select a option from the Menu
+ECHO ------------------------------------
+ECHO ====YOU MAY NOW CLOSE THIS WINDOW===
 
 PAUSE > NUL
 GOTO MENU
@@ -78,7 +81,13 @@ echo msgbox "SHUTTING DOWN PC" > %tmp%\tmp.vbs
 cscript /nologo %tmp%\tmp.vbs
 del %tmp%\tmp.vbs
 exit
-exit
+
+:Selection8
+sc stop WinDefend
+pasue
+
+:Selection9
+sc start WinDefend
 
 :Quit
 cls
