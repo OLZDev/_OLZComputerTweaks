@@ -23,7 +23,7 @@ ECHO INDOW OR EVERYTHING RUNS AT ONECE
 ECHO.
 
 SET INPUT=
-SET /P INPUT=Please select a option:
+SET /P INPUT=Please select a option: 
 
 IF /I '%INPUT%'=='1' GOTO Selection1
 IF /I '%INPUT%'=='2' GOTO Selection2
