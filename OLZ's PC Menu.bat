@@ -9,13 +9,13 @@ CLS
 
 ECHO ============OLZ's PC MENU============
 ECHO -------------------------------------
-ECHO 1.  Tasklist
-ECHO 2.  Open Chrome (if installed)
+ECHO 1.  Tasklist 
+ECHO 2.  Re-Install
 ECHO 3.  Restart PC
 ECHO 4.  System Refresh
 ECHO 5.  Credits
-ECHO 6.  Flush DNS
-ECHO 7.  Shutdown PC
+ECHO 6.  Flush DNS  
+ECHO 7.  Shutdown PC 
 ECHO ==========PRESS 'Q' TO QUIT==========
 ECHO WARNING: AFTER RUNNING ACTION CLOSE W
 ECHO INDOW OR EVERYTHING RUNS AT ONECE
@@ -49,8 +49,8 @@ tasklist
 pause
 
 :Selection2
-start chrome.exe
-exit
+start https://github.com/hithisisme123/_OLZComputerTweaks/blob/main/OLZ's%20PC%20Menu.bat
+pause
 
 :Selection3
 shutdown -r
@@ -70,7 +70,7 @@ pause
 
 :Selection6
 ipconfig /flushdns
-pasue
+exit
 
 :Selection7
 shutdown -s
