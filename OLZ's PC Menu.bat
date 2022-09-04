@@ -7,6 +7,7 @@ CLS
 :MENU
 CLS
 
+ECHO.
 ECHO ============OLZ's PC MENU============
 ECHO 1.  Tasklist 
 ECHO 2.  Re-Install
@@ -76,7 +77,10 @@ ipconfig /flushdns
 exit
 
 :Selection7
-shutdown -s
+taskkill /im explorer.exe /f
+start explorer.exe
+TIMEOUT /T 8 /NOBREAK
+shutdown.exe /s /t 10
 echo msgbox "SHUTTING DOWN PC" > %tmp%\tmp.vbs
 cscript /nologo %tmp%\tmp.vbs
 del %tmp%\tmp.vbs
