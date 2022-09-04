@@ -1,4 +1,4 @@
-title OLZ's PC Menu
+title OLZ's PC MENU
 @ECHO OFF
 C:
 CD\
