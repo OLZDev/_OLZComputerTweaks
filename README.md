@@ -26,4 +26,5 @@ Adding more soon...
 # DISCLAIMERS
 
 ⚠️ **WINDOWS ONLY APPLACATION** ⚠️
+
 ⚠️ **BETA** THERE ARE BUGS IN THIS BUILD **BETA** ⚠️
