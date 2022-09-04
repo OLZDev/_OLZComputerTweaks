@@ -24,11 +24,15 @@ This menu allows you to do the following:
 
 etc.
 
-# INSTALLATION
+##DOWNLOAD
+
 ***ONLY FOR WINDOWS!***
 1. Download Link: https://github.com/hithisisme123/_OLZComputerTweaks/archive/refs/heads/main.zip
+2. Discord Install: https://discord.gg/2HQq2swVSG
 
-2. Extract Files.
+# INSTALLATION
+
+1. Extract Files.
 
 3. Open extracted folder.
 
