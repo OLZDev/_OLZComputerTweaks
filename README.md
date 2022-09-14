@@ -24,7 +24,7 @@ This menu allows you to do the following:
 
 etc.
 
-##DOWNLOAD
+## DOWNLOAD
 
 ***ONLY FOR WINDOWS!***
 1. Download Link: https://github.com/hithisisme123/_OLZComputerTweaks/archive/refs/heads/main.zip
