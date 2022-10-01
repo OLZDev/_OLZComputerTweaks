@@ -1,3 +1,28 @@
+@echo off
+
+:: perms
+REM
+>nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
+
+REM --> If error flag set, we do not have admin.
+if '%errorlevel%' NEQ '0' (
+    echo Starting...
+    goto UAC
+) else ( goto ready )
+
+:UAC
+    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
+    set params = %*:"=""
+    echo UAC.ShellExecute "cmd.exe", "/c %~s0 %params%", "", "runas", 1 >> "%temp%\getadmin.vbs"
+
+    "%temp%\getadmin.vbs"
+    del "%temp%\getadmin.vbs"
+    exit /B
+
+:ready
+    pushd "%CD%"
+    CD /D "%~dp0"
+cls
 title OLZ's PC MENU
 @ECHO OFF
 C:
@@ -18,7 +43,7 @@ ECHO 6.  Flush DNS
 ECHO 7.  Shutdown PC 
 ECHO 8.  Disable RTP
 ECHO 9.  Enable RTP
-ECHO 10. Coming soon...
+ECHO 10. Internet Info
 ECHO ==========PRESS 'Q' TO QUIT==========
 ECHO WARNING: AFTER RUNNING ACTION CLOSE W
 ECHO INDOW OR EVERYTHING RUNS AT ONECE
@@ -96,10 +121,7 @@ pasue
 sc start WinDefend
 
 :Selection10
-echo msgbox "I said coming soon..." > %tmp%\tmp.vbs
-cscript /nologo %tmp%\tmp.vbs
-del %tmp%\tmp.vbs
-exit
+ipconfig /all
 pause
 
 :Quit
