@@ -23,4 +23,4 @@ It also allows you to program your own functions if you understand the Batch Scr
 
 ⚠️ **WINDOWS ONLY APPLACATION** ⚠️
 
-⚠️ **BETA** THERE ARE BUGS IN THIS BUILD **BETA** ⚠️
+⚠️  THERE ARE BUGS IN THIS BUILD ⚠️
