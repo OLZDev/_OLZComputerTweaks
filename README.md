@@ -17,7 +17,7 @@ It also allows you to program your own functions if you understand the Batch Scr
 
 3. Open extracted folder.
 
-4. Run "*OLZ's PC MENU.bat*".
+4. Run "*OCP.bat*".
 
 # DISCLAIMERS
 
