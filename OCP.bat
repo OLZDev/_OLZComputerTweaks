@@ -34,17 +34,18 @@ CLS
 
 ECHO.
 ECHO ============OLZ's PC MENU============
-ECHO 1.  Tasklist 
-ECHO 2.  Re-Install
-ECHO 3.  Restart PC
-ECHO 4.  System Refresh
-ECHO 5.  Credits
-ECHO 6.  Flush DNS  
-ECHO 7.  Shutdown PC 
-ECHO 8.  Disable RTP
-ECHO 9.  Enable RTP
-ECHO 10. Internet Info
-ECHO 11. Windows Version
+ECHO A  Tasklist 
+ECHO B  Re-Install
+ECHO C  Restart PC
+ECHO D  System Refresh
+ECHO E  Credits
+ECHO F  Flush DNS  
+ECHO G  Shutdown PC 
+ECHO H  Disable RTP
+ECHO I  Enable RTP
+ECHO J  Internet Info
+ECHO K  Windows Version
+ECHO L  File Scan
 ECHO ==========PRESS 'Q' TO QUIT==========
 ECHO WARNING: AFTER RUNNING ACTION CLOSE W
 ECHO INDOW OR EVERYTHING RUNS AT ONECE
@@ -53,16 +54,17 @@ ECHO.
 SET INPUT=
 SET /P INPUT=Please select a option: 
 
-IF /I '%INPUT%'=='1' GOTO Selection1
-IF /I '%INPUT%'=='2' GOTO Selection2
-IF /I '%INPUT%'=='3' GOTO Selection3
-IF /I '%INPUT%'=='4' GOTO Selection4
-IF /I '%INPUT%'=='5' GOTO Selection5
-IF /I '%INPUT%'=='6' GOTO Selection6
-IF /I '%INPUT%'=='7' GOTO Selection7
-IF /I '%INPUT%'=='8' GOTO Selection8
-IF /I '%INPUT%'=='9' GOTO Selection9
-IF /I '%INPUT%'=='11' GOTO Selection11
+IF /I '%INPUT%'=='A' GOTO Selection1
+IF /I '%INPUT%'=='B' GOTO Selection2
+IF /I '%INPUT%'=='C' GOTO Selection3
+IF /I '%INPUT%'=='D' GOTO Selection4
+IF /I '%INPUT%'=='E' GOTO Selection5
+IF /I '%INPUT%'=='F' GOTO Selection6
+IF /I '%INPUT%'=='G' GOTO Selection7
+IF /I '%INPUT%'=='H' GOTO Selection8
+IF /I '%INPUT%'=='I' GOTO Selection9
+IF /I '%INPUT%'=='J' GOTO Selection11
+IF /I '%INPUT%'=='K' GOTO Selection12
 IF /I '%INPUT%'=='Q' GOTO Quit
 
 CLS
@@ -128,6 +130,10 @@ pause
 :Selection11
 cls
 VER
+pause
+
+:Selection12
+sfc /scannow
 pause
 
 :Quit
