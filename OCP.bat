@@ -4,7 +4,7 @@
 REM
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 
-REM --> If error flag set, we do not have admin.
+REM
 if '%errorlevel%' NEQ '0' (
     echo Starting...
     goto UAC
@@ -42,10 +42,9 @@ ECHO E  Credits
 ECHO F  Flush DNS  
 ECHO G  Shutdown PC 
 ECHO H  Disable RTP
-ECHO I  Enable RTP
-ECHO J  Internet Info
+ECHO I  Internet Info
+ECHO J  File Scan
 ECHO K  Windows Version
-ECHO L  File Scan
 ECHO ==========PRESS 'Q' TO QUIT==========
 ECHO WARNING: AFTER RUNNING ACTION CLOSE W
 ECHO INDOW OR EVERYTHING RUNS AT ONECE
@@ -63,8 +62,8 @@ IF /I '%INPUT%'=='F' GOTO Selection6
 IF /I '%INPUT%'=='G' GOTO Selection7
 IF /I '%INPUT%'=='H' GOTO Selection8
 IF /I '%INPUT%'=='I' GOTO Selection9
-IF /I '%INPUT%'=='J' GOTO Selection11
-IF /I '%INPUT%'=='K' GOTO Selection12
+IF /I '%INPUT%'=='J' GOTO Selection12
+IF /I '%INPUT%'=='K' GOTO Selection11
 IF /I '%INPUT%'=='Q' GOTO Quit
 
 CLS
@@ -129,7 +128,7 @@ pause
 
 :Selection11
 cls
-VER
+winver
 pause
 
 :Selection12
