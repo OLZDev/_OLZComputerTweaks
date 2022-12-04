@@ -130,6 +130,7 @@ pause
 cls
 winver
 pause
+exit
 
 :Selection12
 sfc /scannow
