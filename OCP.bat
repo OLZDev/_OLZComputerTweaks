@@ -88,6 +88,7 @@ pause
 :Selection3
 shutdown -r
 pause
+exit
 
 :Selection4
 taskkill /im explorer.exe /f
